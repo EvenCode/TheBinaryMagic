@@ -1,0 +1,81 @@
+<html>
+<head>
+	<title>Binary Magic</title>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.css">
+</head>
+<body>
+	<div class="ui text center aligned container menu">
+		<div class="header item">
+			<i class="pointing right big icon"></i>
+			<span style="font-size:40px">The Power of Binary Search</span>
+			<i class="pointing left big icon"></i>
+		</div>
+	</div>
+
+	<div class="ui main text center aligned container segment">
+		<div class="ui huge header">The Binary Magic</div>
+
+			<div class="ui top attached segment">
+
+				<div class="ui icon message">
+				  <i class="hand pointer icon"></i>
+				  <div class="content">
+				    <div class="header">
+				    	<h3 style="font-size:30px">Choose a number between <span id="lNum">0</span> and <span id="hNum">1000</span></h3>
+				    </div>
+				    <p style="font-size:20px">Press Lower if your chosen number is less than the number shown; else Press Higher, use this form to set your own Limits</p>
+				  </div>
+				</div>
+
+				<div class="ui labeled input">
+					<div class="ui label">From</div>
+					<input type="number" id="lowinput">
+				</div>
+				<div class="ui labeled input">
+					<div class="ui label">To</div>
+					<input type="number" id="upinput">
+				</div>
+
+				<div class="ui two column very relaxed grid">
+					<div class="column">
+						<p>
+							<h1><a class="ui teal tag label"><h1>Total Guesses :- <span id="numofguess">X</span></h1></a></h1>
+						</p>
+					</div>
+					
+					<div class="column">
+						<p>	
+							<h1><a class="ui blue tag label"><h1>Guesses Left :- <span id="guessleft">X</span></h1></a></h1>
+						</p>
+					</div>
+				</div>
+
+				<div class="ui aligned container card" style="width:auto;">
+					<a class="image">
+					    <div id="guessed_number" style="color:steelblue;font-size:150px;">X</div>
+					</a>
+					<div class="content">
+					    <div class="meta">
+					      <a>
+					      	<div class="ui huge buttons">
+								<button  id="low" class="ui negative button">Lower</button>
+								<div class="or"></div>
+								<button  id="high" class="ui positive button">Higher</button>
+							</div>
+					      </a>
+					    </div>
+					</div>
+				</div>
+
+			</div>
+				<footer>
+					<p>
+						<span class="ui left aligned container"><i class="copyright icon">2017</i></span>
+						<span class="ui right aligned container"><i class="in flag"></i>Made By EvenCode</span>
+					<p>
+				</footer>
+		</div>
+	</div>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
